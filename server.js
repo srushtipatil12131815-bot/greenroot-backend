@@ -9,7 +9,13 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://greenroot-frontend-self.vercel.app",
+    "https://greenroot-frontend-f4xde5olz-srushtipatil12131815-bots-projects.vercel.app",
+    "https://greenroot-frontend-rok5rv7vz-srushtipatil12131815-bots-projects.vercel.app"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
